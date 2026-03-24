@@ -1,0 +1,22 @@
+import tkinter as tk
+
+window = tk.Tk()
+window.title("Plata HO Exam")
+window.geometry("550x280")
+window.resizable(False, False)
+window.configure(bg = "lightblue", cursor = "heart")
+
+label = tk.Label(window, text="WELCOME!", anchor= "center", font=("Arial", 17))
+label.pack(padx=10, pady=10)
+
+button = tk.Button(window, text="REGISTER", anchor= "center", font=("Arial", 17), bg= "darkblue", fg= "white")
+button.pack(padx=10, pady=10)
+
+
+button = tk.Button(window, text="LOG IN", anchor="center",font=("Arial", 17), bg= "green",  fg = "white")
+button.pack(padx=10, pady=10)
+
+t1 = tk.Toplevel(window)
+t1.title("REGISTER")
+
+window.mainloop()
